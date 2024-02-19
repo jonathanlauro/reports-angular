@@ -24,6 +24,9 @@ export class LoginComponent {
     private _snackBar: MatSnackBar
   ){}
 
+
+  // atenção nesse ponto
+
   logar(){
 
     this.service.acessar(this.form.value as UserLogin)?.subscribe({

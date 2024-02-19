@@ -1,0 +1,22 @@
+<main>
+    <section class="left-layout">
+        <img src="assets/images/example-image2.svg" alt="" srcset="">
+    </section>
+    <section class="right-layout">
+        <div class="logo">
+            <img src="assets/images/logo2.png" alt="" srcset="">
+        </div>
+        <form [formGroup]="form" (submit)="logar()">
+            <h2>Relatórios semanais</h2>
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput placeholder="Ex. jhon@example.com" formControlName="username">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input type="password" matInput placeholder="*****************" formControlName="password">
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit" class="btn-primary">Entrar</button>
+        </form>
+    </section>
+</main>
